@@ -15,4 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build with Maven
-      run: "[ -d target ] && echo 'target exist'"
+      run: | 
+          "[ -d target ] && echo 'target exist'"
+          "[ -d target/tmp ] && echo 'target/tmp exist'"
